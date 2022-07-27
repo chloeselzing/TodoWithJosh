@@ -2,6 +2,7 @@ import React from "react";
 import "./todo.css";
 import bin from "../images/bin.png";
 
+
 const Todo = () => {
   return (
     <div className="grid-rows-1">

@@ -1,20 +1,21 @@
 import React from "react";
 import "./Home.css";
 import Todo from "./Todo.jsx";
+import { Link } from 'react-router-dom';
+
+  
 
 const Home = () => {
   return (
     <div className="grid-rows-2 ">
       <div className="grid grid-cols-3 p-3 py-5 pb-4 text-white bg-neutral-700">
-        <a href="#" className="text-lg">
           TodoApp
-        </a>
-        <a href="#" className="text-stone-400 justify-self-center">
+        <Link to="/" className="text-stone-400 justify-self-center">
           Home
-        </a>
-        <a href="#" className="text-stone-400 justify-self-end">
+        </Link>
+        <Link to="/Login" className="text-stone-400 justify-self-end">
           Login
-        </a>
+        </Link>
       </div>
       <div className="grid-rows-2 p-8 ">
         <div className="w-full border rounded box">
